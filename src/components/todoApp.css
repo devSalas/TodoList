@@ -1,9 +1,8 @@
 .todoContainer{
   width:500px;
-  margin: 100px auto;
-
   display: flex;
   flex-direction: column;
+  position: relative;
 
 }
 .todoCreateform{
@@ -31,7 +30,7 @@
 
 .todosContainer{
   padding: 10px;
-  background-color:white ;
+  background-color:transparent ;
   gap:5px;
   margin-top:10px;
 }
@@ -47,12 +46,17 @@
   flex:1;
   font-size: 20px;
 }
+.todoInfo{
+  padding: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
 
 .todoUpdateForm, .todoInfo{
   display:flex;
   align-items:center;
   gap:5px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .button{
@@ -68,4 +72,14 @@
   background: rgb(169,26,221);
   color:white;
   padding: 10px 20px;
+}
+
+img{
+  width: 100%;
+}
+figure{
+  margin: 0px;
+  position: absolute;
+  margin-top: 190px;
+  z-index: -1;
 }
